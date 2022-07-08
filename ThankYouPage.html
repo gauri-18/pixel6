@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="ThankYouScript.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 style="text-align: center;">PERSONAL DETAILS PAGE</h1>
+  <div>
+    <form name="otpValidationForm" onsubmit="return handleOtpFormSubmit()" method="post" action="http://pixel6.co">
+      <p id="contentLine1"></p>
+      <p id="contentLine2"></p>
+      <p id="contentLine3"></p>
+      <p id="contentLine4"></p>
+
+      <p>
+        <pre>OTP Validation :</pre>
+        <input type="number" id="otpValue" name="otpValue" />
+      </p>
+      <p>
+        <input type="submit" value="Submit" name="submit" />
+        &emsp;
+        <input type="reset" value="Reset" name="reset" />
+      </p>
+    </form>
+  </div>
+</body>
+
+</html>

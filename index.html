@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="PersonalLoadDetailsScript.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 style="text-align: center;">PERSONAL DETAILS PAGE</h1>
+  <div>
+    <form name="personalDetailsForm" onsubmit="return handleFormSubmit()" method="post" action="ThankYouPage.html">
+      <p>
+        <pre>Full Name :</pre>
+        <input type="text" id="fullName" name="fullName" />
+      </p>
+
+      <p>
+        <pre>Email Id :</pre>
+        <input type="email" id="emailId" name="emailId" />
+      </p>
+
+      <p>
+        <pre>PAN :</pre>
+        <input type="text" id="panNumber" name="panNumber" />
+      </p>
+
+      <p>
+        <pre>Loan Amount :</pre>
+        <input type="number" id="loanAmount" name="loanAmount" onkeyup="convertLoanAmountToWords()" />
+      </p>
+
+      <p id="words"></p>
+      <br />
+
+      <p>
+        <input type="submit" value="Submit" name="submit" onClick="thankYouPage()" />
+        &emsp;
+        <input type="reset" value="Reset" name="reset" />
+      </p>
+    </form>
+  </div>
+</body>
+
+</html>
